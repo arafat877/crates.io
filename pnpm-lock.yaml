@@ -4,7 +4,7 @@ overrides:
   ember-css-modules>postcss: 8.4.16
   ember-get-config: 2.1.1
   ember-inflector: 4.0.2
-  ember-modifier: 3.2.7
+  ember-modifier: 4.0.0
   miragejs: 0.1.47
 
 specifiers:
@@ -61,7 +61,7 @@ specifiers:
   ember-keyboard: 8.2.0
   ember-link: 2.0.1
   ember-load-initializers: 2.1.2
-  ember-modifier: 3.2.7
+  ember-modifier: 4.0.0
   ember-page-title: 7.0.0
   ember-qunit: 6.1.1
   ember-resolver: 10.0.0
@@ -134,7 +134,7 @@ devDependencies:
   '@percy/cli': 1.17.0
   '@percy/ember': 4.0.0
   '@sinonjs/fake-timers': 10.0.2
-  '@zestia/ember-auto-focus': 4.4.0
+  '@zestia/ember-auto-focus': 4.4.0_ember-source@4.10.0
   broccoli-asset-rev: 3.0.0
   ember-a11y-testing: 5.1.0_dvame2fsqhpslri2nygrxd77tm
   ember-auto-import: 2.6.0_webpack@5.75.0
@@ -153,7 +153,7 @@ devDependencies:
   ember-cli-mirage: 2.4.0_u555suxmrivfbapt7cusy7cn6y
   ember-cli-notifications: 8.0.0
   ember-cli-terser: 4.0.2
-  ember-click-outside: 5.0.1
+  ember-click-outside: 5.0.1_ember-source@4.10.0
   ember-concurrency: 2.3.7
   ember-css-modules: 2.0.1
   ember-data: 4.6.4_webpack@5.75.0
@@ -163,10 +163,10 @@ devDependencies:
   ember-exam: 8.0.0_lxs4qsxg7wqb7jjwy3rhxijg74
   ember-export-application-global: 2.0.1
   ember-fetch: 8.1.2
-  ember-keyboard: 8.2.0_@ember+test-helpers@2.9.3
+  ember-keyboard: 8.2.0_2vr4zvdohzx4wm35jdq3ips3nm
   ember-link: 2.0.1
   ember-load-initializers: 2.1.2
-  ember-modifier: 3.2.7
+  ember-modifier: 4.0.0_ember-source@4.10.0
   ember-page-title: 7.0.0
   ember-qunit: 6.1.1_6j2wkb4dcyok242cgjvcmw6rjq
   ember-resolver: 10.0.0_ember-source@4.10.0
@@ -3568,15 +3568,15 @@ packages:
   /@xtuc/long/4.2.2:
     resolution: {integrity: sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==}
 
-  /@zestia/ember-auto-focus/4.4.0:
+  /@zestia/ember-auto-focus/4.4.0_ember-source@4.10.0:
     resolution: {integrity: sha512-Oios2kkkOLkaaKAxQl25XNjdhskv3BWpxOgjE/i8ig30uUloepU0i8idByqQdsUmNdPmsMr7sQ8TEZ2W7NAfMg==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 6.2.0
-      ember-modifier: 3.2.7
+      ember-modifier: 4.0.0_ember-source@4.10.0
     transitivePeerDependencies:
-      - '@babel/core'
+      - ember-source
       - supports-color
     dev: true
 
@@ -7852,15 +7852,15 @@ packages:
       - whiskers
     dev: true
 
-  /ember-click-outside/5.0.1:
+  /ember-click-outside/5.0.1_ember-source@4.10.0:
     resolution: {integrity: sha512-RilHTCQvD/5d9pZf6H7MbmBWlVl68nhvn1BPLtfpt9iCNyhtnh5SgwIWGHkJRuTz+DooN6hqTe4Wmq8Zk6kYDw==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 5.7.2
-      ember-modifier: 3.2.7
+      ember-modifier: 4.0.0_ember-source@4.10.0
     transitivePeerDependencies:
-      - '@babel/core'
+      - ember-source
       - supports-color
     dev: true
 
@@ -8084,7 +8084,7 @@ packages:
       - supports-color
     dev: true
 
-  /ember-keyboard/8.2.0_@ember+test-helpers@2.9.3:
+  /ember-keyboard/8.2.0_2vr4zvdohzx4wm35jdq3ips3nm:
     resolution: {integrity: sha512-h2kuS2irtIyvNbAMkGDlDTB4TPXwgmC6Nu9bIuGWoCjkGdgJbUg0VegfyRJ1TlxbIHlAelbqVpE8UhfgY5wEag==}
     engines: {node: 12.* || 14.* || >= 16}
     peerDependencies:
@@ -8096,10 +8096,11 @@ packages:
       '@ember/test-helpers': 2.9.3_ember-source@4.10.0
       '@embroider/addon-shim': 1.8.4
       ember-destroyable-polyfill: 2.0.3
-      ember-modifier: 3.2.7
+      ember-modifier: 4.0.0_ember-source@4.10.0
       ember-modifier-manager-polyfill: 1.2.0
     transitivePeerDependencies:
       - '@babel/core'
+      - ember-source
       - supports-color
     dev: true
 
@@ -8138,17 +8139,20 @@ packages:
       - supports-color
     dev: true
 
-  /ember-modifier/3.2.7:
-    resolution: {integrity: sha512-ezcPQhH8jUfcJQbbHji4/ZG/h0yyj1jRDknfYue/ypQS8fM8LrGcCMo0rjDZLzL1Vd11InjNs3BD7BdxFlzGoA==}
-    engines: {node: 12.* || >= 14}
+  /ember-modifier/4.0.0_ember-source@4.10.0:
+    resolution: {integrity: sha512-OdconmrqKP2haK4kBwNmtnA2NiC2MFmIJC3LgJ1WhwZ49GaktM+bRIuFxF/S5W0oaegzKs1qH2ZDlqMeO2L3nw==}
+    engines: {node: 14.* || 16.* || >= 18}
+    peerDependencies:
+      ember-source: '*'
+    peerDependenciesMeta:
+      ember-source:
+        optional: true
     dependencies:
-      ember-cli-babel: 7.26.11
+      '@embroider/addon-shim': 1.8.4
       ember-cli-normalize-entity-name: 1.0.0
       ember-cli-string-utils: 1.1.0
-      ember-cli-typescript: 5.2.1
-      ember-compatibility-helpers: 1.2.6
+      ember-source: 4.10.0_klhxxmjkcvtuhwro2kkspsfzna
     transitivePeerDependencies:
-      - '@babel/core'
       - supports-color
     dev: true
 
